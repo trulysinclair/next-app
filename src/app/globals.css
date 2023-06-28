@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 200, 200, 200;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -16,12 +16,16 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
+.smoke {
   background: linear-gradient(
-      to bottom,
+      -45deg,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(45deg, transparent, #5777ce63) #9a55c21f;
 }
